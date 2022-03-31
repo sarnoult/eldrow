@@ -23,7 +23,7 @@ def pick_word() -> str:
 
 def read_guess(attempt_nb: int) -> str:
     """Prompts the user for a guess"""
-    print(f"Enter your next guess:")
+    print("Enter your next guess:")
     while True:
         guess = input(f"[{attempt_nb}] ")
         if len(guess) != WORD_LENGTH:
@@ -35,11 +35,11 @@ def read_guess(attempt_nb: int) -> str:
     return guess
 
 
-def color_correct(char: str) -> List[str]:
+def color_correct(char: str) -> str:
     return "".join([Back.GREEN, char, Style.RESET_ALL])
 
 
-def color_inword(char: str) -> List[str]:
+def color_inword(char: str) -> str:
     return "".join([Back.YELLOW, char, Style.RESET_ALL])
 
 
