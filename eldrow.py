@@ -1,5 +1,4 @@
 import argparse
-from typing import List
 
 from colorama import init, Style, Back
 from urllib.request import urlopen
